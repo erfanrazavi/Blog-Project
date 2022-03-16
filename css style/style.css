@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lateef&family=League+Spartan&family=Source+Sans+Pro:wght@200&family=Ubuntu:ital@1&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    background: url(https://4kwallpapers.com/images/walls/thumbs_2t/733.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+.site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* main-left------------------- */
+
+.main-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 80vh;
+    border: 1px solid white;
+    position: relative;
+    border-radius: 20px;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    background-color: #383837;
+    border-radius: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    z-index: 0;
+}
+.profile *{
+    padding: 3px;
+    
+}
+.profile-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 0;
+}
+.profile .profile-img img{
+    width: 40%;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-top: -80px;
+}
+.profile-img::after{
+    position: absolute;
+    opacity: .3;
+    top: 17%;
+    left: 38%;
+    border-radius: 300px;
+    content: '';
+    height: calc(19% + 20px);
+    width: calc(30% + 20px);
+    background-image: -webkit-repeating-radial-gradient(center center,#fff,#fff 1px,transparent 0px,transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center,#fff,#fff 1px,transparent 0px,transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center,#fff,#fff 1px,transparent 0px,transparent 100%);
+    -webkit-background-size: 6px 6px;
+    -moz-background-size: 6px 6px;
+    background-size: 6px 6px;
+    z-index: -1;
+}
+
+.profile .name-text{
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.socialNetwork-profile{
+    margin-top: -10px;
+}
+.socialNetwork-profile *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socialNetwork-profile ul li *{
+    padding: 3px;
+    font-size: 1.25rem;
+    color: white;
+    font-weight: 400;
+}
+.paraghraph-footer-main-left{
+    position: absolute;
+    bottom: 0;
+    color: #7e7e78;
+}
+.btn-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* nav-right --------------- */
+
+.nav-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 72%;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    background-color: #1d1d1c;
+    border-radius: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    z-index: 1;
+}
+.para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+
+}
