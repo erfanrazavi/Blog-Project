@@ -11,7 +11,7 @@
 
     <title>Personal Blog</title>
 </head>
-<body>
+<body class="body">
     <div class="site">
         <main class="main-left">
             <section class="profile">
@@ -40,12 +40,20 @@
         <nav class="nav-right">
             <div class="para">
                 <p style="font-family: cursive;">Erfan Razavi</p>
-                <p style="font-size: 2rem;font-family: monospace; color:rgb(158, 158, 158) ;">Web Designer</p>
+                <p id="text" style="font-size: 2rem;font-family: monospace; color:rgb(158, 158, 158) ;">I am a <span class="type"></span></p>
             </div>
         </nav>
         </main>
     </div>
 
-    <script src="script/script-typography.js"></script>
+    <script src="script/typed.js"></script>
+    <script>
+        var typed = new Typed('.type', {
+        strings: ['web developer', 'creative designer' , 'freelancer'],
+        typeSpeed : 100,
+        backSpeed : 100,
+        loop : true
+});
+    </script>
 </body>
 </html>
