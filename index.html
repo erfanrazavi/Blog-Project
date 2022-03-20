@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="bootstrap font/font-awesome-4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="bootstrap font/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Personal Blog</title>
 </head>
 <body class="body">
     <div class="site">
         <main class="main-left">
-            <section class="profile">
+            <section class="profile" >
                 <section class="profile-img">
                     <img src="https://i.pinimg.com/564x/87/ba/bc/87babc369de83f1f69a05161cabe536a.jpg" alt="personal">
                 </section>
@@ -37,7 +37,7 @@
                 </section>
             </section>
            
-        <nav class="nav-right">
+        <nav class="nav-right" data-aos="fade-down" data-aos-duration="1000">
             <div class="para" >
                 
                 <section  class="home  " data-content = "home"  >
@@ -66,7 +66,7 @@
                     <hr style="border: 0;
                     border-top: 1px solid rgba(0,0,0,.1);">
                         <div class="exprience-user-para">
-                            <h2>What  <b>I Do</b></h2>
+                            <h2>What   <b>I Do</b></h2>
                             <div class="what-i-do-user">
                                 <div class="what-i-do-user-1">
                                     <i class="fa fa-laptop" aria-hidden="true"></i>
@@ -80,10 +80,30 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="fun-fact-user">
+                            <h2>Fun <b>Fact</b></h2>
+                            <div class="box-fun-fact-user">
+                                <div class="box-user-1">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i><br>
+                                    <p>Happy Clients</p>
+                                    <p>10</p>
+                                </div>
+                                <div class="box-user-2">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i><br>
+                                    <p>Working Hours</p>
+                                    <p>4,780</p>
+                                </div>
+                                <div class="box-user-3">
+                                    <i class="fa fa-star-o" aria-hidden="true"></i><br>
+                                    <p>Awards Won</p>
+                                    <p>15</p>
+                                </div>
+                            </div>
+                        </div>
                 </section>
                 
-                <section data-content="resume" class="resume  ">
-                    <h2>Resume</h2>
+                <section data-content="resume" class="resume ">
+                    <h2> Resume</h2>
                    
                 </section>
                 <section data-content="concat" class="concat ">
@@ -96,12 +116,15 @@
         <nav class="nav-bar-right">
             <div class="nav-bar-top">
                 <ul>
-                    <li ><a href="#"  data-aos="fade-right"  data-content = "home"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-                    <li><a href="#" class="active" data-content="user"><i class="fa fa-user" aria-hidden="true"></i></a></li>
-                    <li><a href="#" data-content="resume" style="margin-left: -6px ;"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a></li>
+                    <li ><a href="#"  data-content = "home"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                    <li ><a href="#"  class="active" data-content="user"><i class="fa fa-user"  aria-hidden="true"></i></a></li>
+                    <li><a href="#" data-content="resume" ><i class="fa fa-graduation-cap" aria-hidden="true"></i></a></li>
                     <li><a href="#" data-content="concat"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
                     
                 </ul>
+                <div class="p-box-nav" data-aos="">
+                        
+                </div>
             </div>
         </nav>
 

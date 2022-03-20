@@ -61,13 +61,12 @@ hr {
     justify-content: space-between;
     width: 30%;
     height: 100%;
-    border-radius: 6px;
+    border-radius: 3px;
     font-family: monospace;
     z-index: 0;
     background-color: #313131;
     padding: 10px;
     position: relative;
-    left: -35px;
 }
 .profile-img{
     display: flex;
@@ -138,7 +137,7 @@ hr {
 }
 .nav-right section h2::after{
     position: absolute;
-    opacity: .3;
+    opacity: .1;
     top: 50px;
     left: 150px;
     content: '';
@@ -151,6 +150,9 @@ hr {
     -moz-background-size: 6px 6px;
     background-size: 6px 6px;
     z-index: -1;
+}
+.nav-right .home h2::after{
+    display: none;
 }
 /* width */
 .nav-right::-webkit-scrollbar {
@@ -210,7 +212,15 @@ hr {
     display: flex;
     
 } 
-.para .user {
+.para .resume h2 , .para .concat h2{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.nav-right  .resume h2::after{
+    position: absolute;
+    left: 135px;
+}
+.para .user  {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -264,4 +274,93 @@ hr {
     width: 50%;
     margin-left: 60px;
     margin-right: 10px;
+}
+
+.fun-fact-user :not(h2){
+    display: flex;
+    justify-content: space-between;
+}
+.fun-fact-user{
+    margin-top: 50px;
+}
+.fun-fact-user h2{
+    font-size: 1.6rem;
+}
+.box-fun-fact-user *{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-right: 10px;
+}
+.box-fun-fact-user > *{
+    border: 1px solid #9c9c9c;
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    box-shadow: 0px 0px 6px grey;
+}
+.box-fun-fact-user > *:hover{
+    transform: translateY(-10px);
+}
+.box-user-1 , .box-user-2 ,.box-user-3{
+    padding: 5px 30px;
+    border-radius: 5px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: #313131;
+}
+.fun-fact-user i{
+    font-size: 33px;
+    color: rgb(122, 19, 19);
+}
+
+
+.nav-bar-top{
+    position: absolute;
+    top: 106px;
+    right: 160px;
+}
+
+.nav-bar-top i{
+    font-size: 1.25rem;
+    color: #9c9c9c;
+}
+.nav-bar-top ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in-out;
+    border-radius: 10px;
+    background-color: #313131;
+}
+.nav-bar-top ul li{
+    padding: 20px;
+    
+}
+.nav-bar-top ul li i:hover{
+    transition: all .2s ease;
+}
+.nav-bar-top ul li i:hover{
+    transform: translateY(-6px);
+    color: rgb(122, 19, 19);
+}
+.nav-bar-top ul li a.active i{
+    color:  rgb(122, 19, 19);
+
+}
+.p-box-nav.active{
+    position:absolute;
+    padding: 10px;
+    background-color: #313131;
+    color: white;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    top: 5px;
+    right: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,6 +1,8 @@
 let navBar = document.querySelectorAll('.nav-bar-top  ul li a')
 let site = document.querySelector('.site')
 let navRight = document.querySelector('.nav-right')
+let positionNavBarTop = document.querySelector('.p-box-nav')
+console.log(positionNavBarTop)
 navBar.forEach((elem) => {
     elem.addEventListener('click' , function(e){
         e.preventDefault()
@@ -16,6 +18,24 @@ navBar.forEach((elem) => {
         
 
         navRight.style.animation = ' fade .5s linear ';
+        navRight.setAttribute("data-aos" , "fade-down")
     })
 })
 
+navBar.forEach((elem) => {
+    elem.addEventListener('mouseenter' , function(e){
+        let dataBox = this.getAttribute('data-content')
+        positionNavBarTop.innerHTML = `${dataBox}`
+        positionNavBarTop.classList.add('active')
+       
+    })
+})
+
+
+navBar.forEach((elem) => {
+    elem.addEventListener('mouseleave' , function(e){
+        
+        positionNavBarTop.classList.remove('active')
+        positionNavBarTop.innerHTML = ""
+    })
+})
