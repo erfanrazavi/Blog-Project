@@ -343,7 +343,6 @@ hr {
     transition: all .2s ease;
 }
 .nav-bar-top ul li i:hover{
-    transform: translateY(-6px);
     color: rgb(122, 19, 19);
 }
 .nav-bar-top ul li a.active i{
@@ -351,15 +350,13 @@ hr {
 
 }
 .p-box-nav.active{
-    position:absolute;
+    
     padding: 10px;
     background-color: #313131;
     color: white;
     border-radius: 5px;
     width: 50px;
     height: 50px;
-    top: 5px;
-    right: -40px;
     display: flex;
     justify-content: center;
     align-items: center;
