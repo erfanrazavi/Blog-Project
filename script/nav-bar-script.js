@@ -27,15 +27,15 @@ navBar.forEach((elem) => {
         let dataBox = this.getAttribute('data-content')
         positionNavBarTop.innerHTML = `${dataBox}`
         positionNavBarTop.classList.add('active')
+        positionNavBarTop.style.position = 'absolute';
         
-       
     })
 })
 
 
 navBar.forEach((elem) => {
     elem.addEventListener('mouseleave' , function(e){
-        
+        positionNavBarTop.innerHTML = ``
         positionNavBarTop.classList.remove('active')
         
     })

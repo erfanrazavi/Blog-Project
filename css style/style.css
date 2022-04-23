@@ -349,8 +349,12 @@ hr {
     color:  rgb(122, 19, 19);
 
 }
+.p-box-nav{
+    transition: .3s ease;
+   
+}
 .p-box-nav.active{
-    
+   
     padding: 10px;
     background-color: #313131;
     color: white;
@@ -360,4 +364,5 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
