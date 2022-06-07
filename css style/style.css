@@ -42,6 +42,7 @@ hr {
     height: 80vh;
     background-color: #011018;
     border-radius: 2px;
+    position: relative;
 }
 .main-left{
     display: flex;
@@ -318,8 +319,8 @@ hr {
 
 .nav-bar-top{
     position: absolute;
-    top: 106px;
-    right: 160px;
+    top: 42px;
+    right: 0;
 }
 
 .nav-bar-top i{
@@ -340,7 +341,8 @@ hr {
     
 }
 .nav-bar-top ul li i:hover{
-    transition: all .2s ease;
+    transition: all .2s ease-in;
+    cursor: pointer;
 }
 .nav-bar-top ul li i:hover{
     color: rgb(122, 19, 19);
@@ -351,6 +353,7 @@ hr {
 }
 .p-box-nav{
     transition: .3s ease;
+    
    
 }
 .p-box-nav.active{

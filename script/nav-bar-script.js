@@ -1,4 +1,5 @@
 let navBar = document.querySelectorAll('.nav-bar-top  ul li a')
+let navBar2 = document.querySelectorAll('.nav-bar-top ul li')
 let site = document.querySelector('.site')
 let navRight = document.querySelector('.nav-right')
 let positionNavBarTop = document.querySelector('.p-box-nav')
@@ -19,6 +20,9 @@ navBar.forEach((elem) => {
 
         navRight.style.animation = ' fade .5s linear ';
         navRight.setAttribute("data-aos" , "fade-down")
+
+        
+
     })
 })
 
@@ -28,6 +32,7 @@ navBar.forEach((elem) => {
         positionNavBarTop.innerHTML = `${dataBox}`
         positionNavBarTop.classList.add('active')
         positionNavBarTop.style.position = 'absolute';
+        positionNavBarTop.style.transform = 'rotate(360deg)';
         
     })
 })
@@ -37,6 +42,6 @@ navBar.forEach((elem) => {
     elem.addEventListener('mouseleave' , function(e){
         positionNavBarTop.innerHTML = ``
         positionNavBarTop.classList.remove('active')
-        
+        positionNavBarTop.style.transform = 'rotate(-360deg)';
     })
 })
